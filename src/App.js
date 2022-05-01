@@ -10,6 +10,7 @@ function App() {
   return (
     <div className="App font-body">
       <header className="App-header">
+        {process.env.NODE_ENV === "development" ? <small>You are running this application in <b>{process.env.NODE_ENV}</b> mode.</small> : <></>}
         <NavigationBar />
         <Outlet />
         <Footer />
