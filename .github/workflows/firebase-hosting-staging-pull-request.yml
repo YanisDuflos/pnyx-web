@@ -8,7 +8,10 @@ on:
       - main
 jobs:
   get_env_file:
-    - run: 'echo ${{ secrets.STAGING_ENV_FILE }} | base64 --decode > .env'
+    runs-on: ubuntu-latest
+    steps:
+      - run: | 
+          'echo ${{ secrets.STAGING_ENV_FILE }} | base64 --decode > .env'
   build_and_preview:
     if: '${{ github.event.pull_request.head.repo.full_name == github.repository }}'
     runs-on: ubuntu-latest
