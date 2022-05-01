@@ -17,7 +17,7 @@ function LandingBadlyRegisteredYouth() {
             </div>
             <div className="mt-8 text-base md:text-lg">
                 <h5>Tu penses être inscrit dans la bonne commune ?</h5>
-                <a href="#" className="text-indigo-500 font-bold">Je vérifie mon statut d'électeur →</a>
+                <Link href="/verifier-eligibilite-inscription" className="text-indigo-500 font-bold">Je vérifie mon statut d'électeur →</Link>
             </div>
             <div className="mt-16 text-sm md:text-base">
                 <h5><strong className="font-extrabold text-indigo-500">pnyx</strong> est un service créé bénévolement pour servir l’intérêt général. <Link to="/manifeste" className="text-indigo-500 font-bold">Lire le manifeste →</Link></h5>

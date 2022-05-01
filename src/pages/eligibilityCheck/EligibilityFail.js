@@ -1,5 +1,5 @@
 import React from 'react';
-import { useLocation } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import PrimaryButton from '../../buttons/PrimaryButton';
 import SecondaryButton from '../../buttons/SecondaryButton';
 
@@ -35,7 +35,7 @@ function EligibilityFail() {
       <div className='text-center'>
         <span className='text-sm'>Vous pensez qu'il y a erreur ? </span>
         <div>
-          <a href="#" className='text-sm underline text-purple-700'>Réessayer</a>
+          <Link to="/verifier-eligibilite-inscription" className='text-sm underline text-purple-700'>Réessayer</Link>
         </div>
         <span className='text-sm'>En cas de doute, nous vous invitons à contacter votre mairie pour en savoir plus.</span>
       </div>

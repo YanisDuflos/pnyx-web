@@ -36,7 +36,7 @@ function Landing() {
                 </div>
 
                 <div className="hidden lg:block p-8">
-                    <img className="w-12 lg:w-96" src={Logo} />
+                    <img className="w-12 lg:w-96" src={Logo} alt="Le logo pnyx." />
                 </div>
             </div>
 

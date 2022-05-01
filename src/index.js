@@ -4,14 +4,14 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
-import VerifyRegistration from './pages/VerifyRegistration';
-import VerifyEligibility from './pages/VerifyEligibility';
-import PrepareRegistration from './pages/PrepareRegistration';
+// import VerifyRegistration from './pages/VerifyRegistration';
+// import VerifyEligibility from './pages/VerifyEligibility';
+// import PrepareRegistration from './pages/PrepareRegistration';
 import Manifesto from './pages/Manifesto';
 import LandingBadlyRegisteredYouth from './pages/landings/LandingBadlyRegisteredYouth';
 import Landing from './pages/landings/Landing';
 import WorkInProgress from './pages/landings/WorkInProgress';
-import ArticleTemplate from './pages/articles/ArticleTemplate';
+// import ArticleTemplate from './pages/articles/ArticleTemplate';
 import Article from './pages/articles/Article';
 
 ReactDOM.render(
