@@ -1,0 +1,69 @@
+{
+    "legislatives_content": {
+        "title": "Comment voter aux élections législatives en 2022 ?",
+        "excerpt": "Les élections législatives sont une échéance démocratique importante dans la vie politique française. Il faut donc s'y préparer à l'avance. Voici quelques réponses aux questions récurrentes.",
+        "sections": [
+            {
+                "heading": "C'est quoi les élections législatives 2022 ?",
+                "paragraph": "Les élections législatives sont l'occasion d'élire son représentant à l'assemblée nationale, le groupe de parlementaires responsable de l'évaluation et du vote des lois nationales. Le mandat des députés étant un quinquennat, les élections législatives se tiennent tous les 5 ans."
+            },
+            {
+                "heading": "Quand sont les élections législatives 2022 ?",
+                "paragraph": "Les élections législatives se déroulent en deux tours. En 2022, ils se tiendront le dimanche 12 juin pour le premier tour, et le dimanche 19 juin pour le second."
+            },
+            {
+                "heading": "Quelles sont les conditions pour voter aux élections législatives ?",
+                "paragraph": "Il y a trois conditions à remplir pour être éligible au vote lors des élections législatives : la majorité révolue, la pleine jouissance de ses droits politiques, et la possession de la nationalité française. Il faut aussi être inscrit sur une liste électorale communale."
+            },
+            {
+                "heading": "Comment savoir si j'ai le droit de voter aux élections législatives ?",
+                "paragraph": "Pour savoir si vous avez le droit de voter, il faut d'abord vérifier que vous êtes bien éligibles au vote. Si vous l'êtes, il faut alors s'inscrire aux listes électorales de votre commune. Vous serez assigné un bureau de vote auquel il faudra se rendre le jour du scrutin.",
+                "call_to_action": {
+                    "description": "Nous avons créé un outil pour vous aider à vérifier votre éligibilité au vote en France en moins de 3 minutes.",
+                    "link": "/verifier-eligibilite-inscription",
+                    "label": "Je vérifie mon éligibilité"
+                }
+            },
+            {
+                "heading": "Comment s'inscrire aux listes électorales pour les élections législatives ?",
+                "paragraph": "Une fois votre éligibilité confirmée, il faut vous inscrire aux listes électorales de votre commune. Si vous avez eu 18 ans récemment, il est probable que vous ayez été inscrit d'office par l'administration nationale.",
+                "call_to_action": {
+                    "description": "Le processus d'inscription est relativement complexe. Nous avons créé un outil pour constituer votre dossier en moins de 15 minutes.",
+                    "link": "/constitution-dossier-inscription",
+                    "label": "Je constitue mon dossier"
+                }
+            },
+            {
+                "heading": "Comment vérifier si je suis inscrit dans la bonne commune pour les élections législatives ?",
+                "paragraph": "Aux élections présidentielles 2022, plus de 6 millions de français étaient inscrits dans la mauvaise commune. Vous êtes peut-être dans ce cas de figure. Pour éviter ceci, il faut vérifier sa commune d'inscription à l'avance.",
+                "call_to_action": {
+                    "description": "Pour vous aider, nous avons créé un outil qui vous permet de vérifier votre commune d'inscription aux listes électorales en moins de 5 minutes.",
+                    "link": "/verifier-inscription-listes",
+                    "label": "Je vérifie ma commune d'inscription"
+                }
+            },
+            {
+                "heading": "Comment trouver mon bureau de vote pour les élections législatives ?",
+                "paragraph": "Une fois inscrit, il ne vous reste plus qu'à trouver votre bureau de vote.",
+                "call_to_action": {
+                    "description": "Pour vous aider, nous avons créé un outil qui vous permet de trouver votre bureau de vote en moins de 5 minutes.",
+                    "link": "/verifier-inscription-listes",
+                    "label": "Je trouve mon bureau de vote"
+                }
+            },
+            {
+                "heading": "Comment changer de bureau de vote pour les élections législatives ?",
+                "paragraph": "Si vous avez déménagé récemment, ou si vous projetez ne pas être présent dans votre commune le jour du vote, vous pouvez vous inscrire sur les listes électorales d'une autre commune. Il faut prévoir assez de temps à l'avance pour que l'inscription soit confirmée avant la date limite. Pour les élections législatives en 2022, c'est le 29 avril.",
+                "call_to_action": {
+                    "description": "Le processus d'inscription est relativement complexe. Nous avons créé un outil pour constituer votre dossier en moins de 15 minutes.",
+                    "link": "/constitution-dossier-inscription",
+                    "label": "Je constitue mon dossier"
+                }
+            },
+            {
+                "heading": "Quels documents préparer le jour du vote ?",
+                "paragraph": "Le jour du vote, une preuve d'identité et une preuve de nationalité sont requises. Le passeport ou la pièce d'identité suffisent en général. La carte électorale n'est pas obligatoire, mais le tampon pourra faire office de souvenir."
+            }
+        ]
+    }
+}

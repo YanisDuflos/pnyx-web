@@ -1,8 +1,12 @@
 import React from 'react';
+import { useLocation } from 'react-router-dom';
 import PrimaryButton from '../../buttons/PrimaryButton';
 import SecondaryButton from '../../buttons/SecondaryButton';
 
 function EligibilityFail() {
+
+  const { state } = useLocation();
+  const { reasonsForIneligibility } = state;
 
   return (
     <div className='text-base text-left'>
@@ -10,9 +14,9 @@ function EligibilityFail() {
       <span>
         Vous le serez quand:
         <ul className='list-disc'>
-          <li>vous aurez atteint la majorité</li>
-          <li>vous aurez obtenu la nationalité française</li>
-          <li>vous aurez récupéré vos droits électoraux et politiques</li>
+          {reasonsForIneligibility.notANational ? <li>vous aurez obtenu la nationalité française</li> : <></>}
+          {reasonsForIneligibility.noElectoralRights ? <li>vous aurez récupéré vos droits électoraux et politiques</li> : <></>}
+          {reasonsForIneligibility.notOfAge ? <li>vous aurez atteint la majorité</li> : <></>}
         </ul>
       </span>
       <h2 className='text-lg'>Laissez-nous vous rappeler quand vous deviendrez éligible.</h2>

@@ -1,26 +1,38 @@
 import Logo from '../Logo.png'
-import { Link, Outlet } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 function NavigationBar() {
-    return (
-        <div className="w-screen text-gray-800 bg-indigo-300">
-            <nav className="border-solid border-b-2 p-4 space-x-4 flex justify-between">
-                <div className=''>
-                    <Link to="/" className="font-extrabold flex flex-row space-x-4 hover:text-indigo-500">
-                        <img className="w-12" src={Logo} />
-                        <div>pnyx</div>
-                    </Link>
-                </div>
-                <div className='flex space-x-4'>
-                    <Link to="/verifier-eligibilite-inscription" className='hover:text-indigo-500'>Éligibilité</Link>
+  return (
+
+    <nav className="w-screen flex flex-row justify-between text-gray-800 px-6 py-4 bg-indigo-200 border-solid border-b-2 
+    p-4 space-x-4 
+    lg:text-left lg:flex-row lg:space-x-72 lg:px-24 lg:py-6">
+      <div className='flex flex-row space-x-12 lg:space-x-0'>
+        {/* TODO: Burger */}
+        <img className="w-12 lg:hidden" src={Logo} />
+        <Link to="/" className="flex flex-row space-x-4 items-center hover:text-indigo-500">
+          <img className="w-12 lg:w-16" src={Logo} />
+          <div className='text-2xl font-extrabold' >pnyx</div>
+        </Link>
+      </div>
+      <div className='hidden lg:flex space-x-8 items-center'>
+        <Link to="/manifeste" className='hover:text-indigo-500 lg:text-xl'>Manifeste</Link>
+        <Link
+          to="/verifier-eligibilite-inscription"
+          className="inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-base lg:text-xl font-medium rounded-md 
+            text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+        >
+          Vérifier mon statut électoral
+        </Link>
+
+        {/* <PrimaryButton label="Vérifier mon statut électoral" /> */}
+        {/* <Link to="/verifier-eligibilite-inscription" className='hover:text-indigo-500'>Éligibilité</Link>
                     <Link to="/verifier-inscription-listes" className='hover:text-indigo-500'>Listes</Link>
                     <Link to="/preparer-dossier-inscription" className='hover:text-indigo-500'>Dossier</Link>
-                    <Link to="/manifeste" className='hover:text-indigo-500'>Manifeste</Link>
-                </div>
-            </nav>
-            <Outlet />
-        </div>
-    )
+                    <Link to="/manifeste" className='hover:text-indigo-500'>Manifeste</Link> */}
+      </div>
+    </nav>
+  )
 }
 
 export default NavigationBar;
