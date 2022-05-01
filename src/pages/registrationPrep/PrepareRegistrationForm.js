@@ -104,7 +104,7 @@ function VerifyRegistrationForm() {
                             <div className="text-left my-4">
                                 <div className='my-2'>
                                     <span className="text-base block">Bravo, vous êtes <span className="font-semibold">éligibles</span> à l’inscription sur les listes électorales !</span>
-                                    <span className="text-base block">Vous avez jusqu’au {"dynamic_date"} pour finaliser votre inscription. <a href="#">(* sauf exceptions)</a></span>
+                                    <span className="text-base block">Vous avez jusqu’au {"dynamic_date"} pour finaliser votre inscription. <span className="underline">(* sauf exceptions)</span></span>
                                 </div>
                                 <span className="font-medium text-base block">Documents à préparer :</span>
                                 <div className='my-2'>

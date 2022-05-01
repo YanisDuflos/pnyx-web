@@ -1,4 +1,4 @@
-import { Outlet, Route, Routes } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import EligibilityFail from "./eligibilityCheck/EligibilityFail";
 import EligibilitySuccess from "./eligibilityCheck/EligibilitySuccess";
 import VerifyEligibilityForm from "./eligibilityCheck/VerifyEligibilityForm";

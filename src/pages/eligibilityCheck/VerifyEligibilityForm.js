@@ -151,7 +151,7 @@ function VerifyEligibilityForm() {
       </div>
       <PrimaryButton type="submit" label="Vérifier" />
       <div>
-        <span className="text-xs">Source: <a target="_blank" href="https://www.vie-publique.fr/fiches/23926-quelles-sont-les-conditions-pour-voter" className='text-indigo-600 underline'>https://www.vie-publique.fr/fiches/23926-quelles-sont-les-conditions-pour-voter</a></span>
+        <span className="text-xs">Source: <a target="_blank" rel="noopener" href="https://www.vie-publique.fr/fiches/23926-quelles-sont-les-conditions-pour-voter" className='text-indigo-600 underline'>https://www.vie-publique.fr/fiches/23926-quelles-sont-les-conditions-pour-voter</a></span>
       </div>
     </form>
   )

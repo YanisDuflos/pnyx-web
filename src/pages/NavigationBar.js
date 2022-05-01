@@ -9,9 +9,9 @@ function NavigationBar() {
     lg:text-left lg:flex-row lg:space-x-72 lg:px-24 lg:py-6">
       <div className='flex flex-row space-x-12 lg:space-x-0'>
         {/* TODO: Burger */}
-        <img className="w-12 lg:hidden" src={Logo} />
+        <img className="w-12 lg:hidden" src={Logo} alt="L'icône du menu." />
         <Link to="/" className="flex flex-row space-x-4 items-center hover:text-indigo-500">
-          <img className="w-12 lg:w-16" src={Logo} />
+          <img className="w-12 lg:w-16" src={Logo} alt="Le logo pnyx." />
           <div className='text-2xl font-extrabold' >pnyx</div>
         </Link>
       </div>

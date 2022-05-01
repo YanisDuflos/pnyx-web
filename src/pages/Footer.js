@@ -13,7 +13,7 @@ function Footer() {
         lg:text-left lg:flex-row lg:space-x-42 lg:px-24 lg:py-14">
             <div className='flex flex-col space-y-4 mt-6 order-last lg:mt-0 lg:-order-none'>
                 <Link to='/' className='flex flex-row justify-center items-center lg:justify-start space-x-6 hover:text-indigo-500'>
-                    <img className="w-12 lg:w-24" src={Logo} />
+                    <img className="w-12 lg:w-24" src={Logo} alt="Le logo pnyx." />
                     <h1 className="font-extrabold text-3xl">pnyx</h1>
                 </Link>
                 <div className='flex flex-col space-y-2'>
