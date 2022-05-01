@@ -7,6 +7,8 @@ on:
     branches:
       - main
 jobs:
+  get_env_file:
+    - run: 'echo ${{ secrets.STAGING_ENV_FILE }} | base64 --decode > .env'
   build_and_deploy:
     runs-on: ubuntu-latest
     environment: Staging

@@ -9,7 +9,7 @@ function Manifesto() {
     const subscribe = async (e) => {
         e.preventDefault()
         // const response = await axios.post('http://localhost:3001/subscribe', { email: email })
-        const response = await axios.post('https://us-central1-pnyx-web-staging.cloudfunctions.net/subscribe', { email: email })
+        const response = await axios.post(process.env.REACT_APP_FIREBASE_FIRESTORE_URL + 'subscribe', { email: email })
 
         if (response && response.status === 200) {
             toast.success('On a bien reçu votre adresse ! Merci et à très vite.')
