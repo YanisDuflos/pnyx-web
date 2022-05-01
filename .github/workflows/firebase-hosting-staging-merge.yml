@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: | 
-          'echo "${{ secrets.STAGING_ENV_FILE }}" > .env'
+          'echo ${{ secrets.STAGING_ENV_FILE }} > .env'
   build_and_deploy:
     runs-on: ubuntu-latest
     environment: Staging
