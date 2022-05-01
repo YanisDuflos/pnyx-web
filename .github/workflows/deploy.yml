@@ -1,0 +1,24 @@
+name: Deploy
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy-staging:
+    name: Deploy to staging
+    runs-on: ubuntu-latest
+    environment: staging
+    steps:
+     - run: echo Deploying to staging.
+  
+  deploy-production:
+    name: Deploy to production
+    environment:
+      name: Production
+    needs: [deploy-staging]
+    runs-on: ubuntu-latest
+    steps:
+     - run: echo Deploying to production.
+
