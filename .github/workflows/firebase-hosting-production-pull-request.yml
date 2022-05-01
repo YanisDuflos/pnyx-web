@@ -7,6 +7,13 @@ on:
     branches:
       - main
 jobs:
+  get_prod_env_file:
+    runs-on: ubuntu-latest
+    steps:
+      - run: | 
+          echo PROD_ENV_FILE_CONTENTS > .env
+        env:
+          PROD_ENV_FILE_CONTENTS: ${{ secrets.PROD_ENV_FILE }}
   build_and_preview:
     if: '${{ github.event.pull_request.head.repo.full_name == github.repository }}'
     runs-on: ubuntu-latest

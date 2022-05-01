@@ -7,6 +7,13 @@ on:
     branches:
       - main
 jobs:
+  get_prod_env_file:
+    runs-on: ubuntu-latest
+    steps:
+      - run: | 
+          echo PROD_ENV_FILE_CONTENTS > .env
+        env:
+          PROD_ENV_FILE_CONTENTS: ${{ secrets.PROD_ENV_FILE }}
   build_and_deploy:
     runs-on: ubuntu-latest
     environment: Production

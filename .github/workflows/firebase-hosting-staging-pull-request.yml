@@ -7,7 +7,7 @@ on:
     branches:
       - main
 jobs:
-  get_env_file:
+  get_staging_env_file:
     runs-on: ubuntu-latest
     steps:
       - run: | 
