@@ -37,7 +37,7 @@ function WorkInProgress() {
                     </div>
 
 
-                    <form className="flex flex-col mt-4" onSubmit={subscribe}>
+                    {/* <form className="flex flex-col mt-4" onSubmit={subscribe}>
                         <h3 className='font-bold'>Laissez-nous votre email pour être informé de la sortie des prochaines fonctionnalités</h3>
 
                         <div className='flex flex-row space-x-6'>
@@ -79,7 +79,13 @@ function WorkInProgress() {
                                 Tenez-moi au courant
                             </button>
                         </div>
-                    </form>
+                    </form> */}
+                    <a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSebaipUtHF6Sd8c2xjtKDfufKkb-wKqrKj1LEm6nWq6DsC8tw/viewform?usp=sf_link"
+                        className="flex self-start justify-center py-2 px-4 border border-transparent shadow-sm text-base lg:text-xl font-medium rounded-md 
+                        text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                        Tenez-moi au courant !
+                    </a>
+
                     <div className="text-sm flex flex-col lg:flex-row lg:pt-6 lg:space-x-3">
                         <div className="inline lg:block"><span className="font-extrabold text-indigo-500">pnyx</span> est un service créé bénévolement pour servir l'intérêt général.</div>
                         <Link to="manifeste" className="inline lg:block text-indigo-500 font-bold">Lire le manifeste →</Link>

@@ -14,7 +14,6 @@ function getAgeInYears(birthDate) {
   return diff
 }
 
-
 function VerifyEligibilityForm() {
 
   const navigate = useNavigate();
@@ -59,101 +58,111 @@ function VerifyEligibilityForm() {
   }
 
   return (
-    <form onSubmit={handleSubmit} className="p-4">
+    <div className="p-6">
+      {/* <form onSubmit={handleSubmit} className="p-4">
 
-      <div className="mt-10">
-        <div className="flex text-base justify-between space-x-2 text-left">
-          <div className="flex">
-            <label htmlFor="birthDate" className="">
-              Quelle est votre date de naissance ? <strong className='text-indigo-600'>*</strong>
-            </label>
+        <div className="mt-10">
+          <div className="flex text-base justify-between space-x-2 text-left">
+            <div className="flex">
+              <label htmlFor="birthDate" className="">
+                Quelle est votre date de naissance ? <strong className='text-indigo-600'>*</strong>
+              </label>
+            </div>
+            <div className="flex">
+              <input
+                id="date"
+                name="birthDate"
+                type="date"
+                required
+                autoComplete="date"
+                value={birthDate}
+                onChange={(e) => setBirthDate(e.target.value)}
+                className="appearance-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm"
+              />
+            </div>
           </div>
-          <div className="flex">
-            <input
-              id="date"
-              name="birthDate"
-              type="date"
-              required
-              autoComplete="date"
-              value={birthDate}
-              onChange={(e) => setBirthDate(e.target.value)}
-              className="appearance-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm"
-            />
+
+          <div className="flex text-base justify-between items-center text-left">
+            <span>Jouissez vous de vos droits électoraux ? <strong className='text-indigo-600'>*</strong></span>
+            <div className="flex space-x-4">
+              <div className="flex">
+                <input
+                  type="radio"
+                  id="oui"
+                  required
+                  name="hasRights"
+                  value={hasRights}
+                  checked={hasRights === true}
+                  onChange={() => setRights(true)}
+                  className="accent-indigo-600 focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300" />
+                <label htmlFor="oui" className="ml-3 block text-sm font-medium text-gray-700">
+                  Oui
+                </label>
+              </div>
+              <div className="flex">
+                <input
+                  type="radio"
+                  id="non"
+                  name="hasRights"
+                  value={hasRights}
+                  checked={hasRights === false}
+                  onChange={() => setRights(false)}
+                  className="accent-indigo-600 focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300" />
+                <label htmlFor="non" className="ml-3 block text-sm font-medium text-gray-700">
+                  Non
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <div className="flex text-base justify-between items-center text-left">
+            <span>Détenez-vous la nationalité française ? <strong className='text-indigo-600'>*</strong></span>
+            <div className="flex space-x-4">
+              <div className="flex">
+                <input
+                  type="radio"
+                  id="oui"
+                  name="isNational"
+                  required
+                  value={isNational}
+                  checked={isNational === true}
+                  onChange={() => setNationality(true)}
+                  className="accent-indigo-600 focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300" />
+                <label htmlFor="oui" className="ml-3 block text-sm font-medium text-gray-700">
+                  Oui
+                </label>
+              </div>
+              <div className="flex">
+                <input
+                  type="radio"
+                  id="non"
+                  name="isNational"
+                  required
+                  value={isNational}
+                  checked={isNational === false}
+                  onChange={() => setNationality(false)}
+                  className="accent-indigo-600 focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300" />
+                <label htmlFor="non" className="ml-3 block text-sm font-medium text-gray-700">
+                  Non
+                </label>
+              </div>
+            </div>
           </div>
         </div>
-
-        <div className="flex text-base justify-between items-center text-left">
-          <span>Jouissez vous de vos droits électoraux ? <strong className='text-indigo-600'>*</strong></span>
-          <div className="flex space-x-4">
-            <div className="flex">
-              <input
-                type="radio"
-                id="oui"
-                required
-                name="hasRights"
-                value={hasRights}
-                checked={hasRights === true}
-                onChange={() => setRights(true)}
-                className="accent-indigo-600 focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300" />
-              <label htmlFor="oui" className="ml-3 block text-sm font-medium text-gray-700">
-                Oui
-              </label>
-            </div>
-            <div className="flex">
-              <input
-                type="radio"
-                id="non"
-                name="hasRights"
-                value={hasRights}
-                checked={hasRights === false}
-                onChange={() => setRights(false)}
-                className="accent-indigo-600 focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300" />
-              <label htmlFor="non" className="ml-3 block text-sm font-medium text-gray-700">
-                Non
-              </label>
-            </div>
-          </div>
+        <PrimaryButton type="submit" label="Vérifier" />
+        <div>
+          <span className="text-xs">Source: <a target="_blank" rel="noopener" href="https://www.vie-publique.fr/fiches/23926-quelles-sont-les-conditions-pour-voter" className='text-indigo-600 underline'>https://www.vie-publique.fr/fiches/23926-quelles-sont-les-conditions-pour-voter</a></span>
         </div>
-
-        <div className="flex text-base justify-between items-center text-left">
-          <span>Détenez-vous la nationalité française ? <strong className='text-indigo-600'>*</strong></span>
-          <div className="flex space-x-4">
-            <div className="flex">
-              <input
-                type="radio"
-                id="oui"
-                name="isNational"
-                required
-                value={isNational}
-                checked={isNational === true}
-                onChange={() => setNationality(true)}
-                className="accent-indigo-600 focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300" />
-              <label htmlFor="oui" className="ml-3 block text-sm font-medium text-gray-700">
-                Oui
-              </label>
-            </div>
-            <div className="flex">
-              <input
-                type="radio"
-                id="non"
-                name="isNational"
-                required
-                value={isNational}
-                checked={isNational === false}
-                onChange={() => setNationality(false)}
-                className="accent-indigo-600 focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300" />
-              <label htmlFor="non" className="ml-3 block text-sm font-medium text-gray-700">
-                Non
-              </label>
-            </div>
-          </div>
-        </div>
+      </form> */}
+      <div className="flex-col space-y-4 text-center">
+        <h1 className='text-2xl font-bold'>Bien reçu !</h1>
+        <h2 className='text-xl font-bold'>Avant tout, vérifions votre éligibilité au vote en France.</h2>
+        <p className='text-base'>Prenons 2 minutes pour vérifier si vous remplissez les critères d’éligibilité.</p>
+        <PrimaryButton type="" label="Démarrer" />
+        <h2 className='text-lg font-medium'>Le saviez-vous ?</h2>
+        <p className='text-base'>En France, le droit de vote est conditionné par 3 critères.</p>
       </div>
-      <PrimaryButton type="submit" label="Vérifier" />
-      <div>
-        <span className="text-xs">Source: <a target="_blank" rel="noopener" href="https://www.vie-publique.fr/fiches/23926-quelles-sont-les-conditions-pour-voter" className='text-indigo-600 underline'>https://www.vie-publique.fr/fiches/23926-quelles-sont-les-conditions-pour-voter</a></span>
-      </div>
-    </form>
+    </div>
   )
 }
 
