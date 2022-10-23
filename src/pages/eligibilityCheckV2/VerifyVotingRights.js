@@ -30,8 +30,8 @@ function VerifyVotingRights({ userData }) {
             <div className='flex-col p-8 space-y-8 justify-center'>
                 <h1 className='text-2xl font-bold'>Jouissez-vous de vos droits politiques et électoraux ?</h1>
                 <div className='flex space-x-4 justify-center'>
-                    <CardButton icon="❌" label="Non" style="secondary" onClick={() => onOptionSelected(false)} />
-                    <CardButton icon="✅" label="Oui" style="primary" onClick={() => onOptionSelected(false)} />
+                    <CardButton icon="❌" label="Non" customStyle="secondary" onClick={() => onOptionSelected(false)} />
+                    <CardButton icon="✅" label="Oui" customStyle="primary" onClick={() => onOptionSelected(false)} />
                 </div>
             </div>
             <div className='flex-col space-y-2 mx-8'>
