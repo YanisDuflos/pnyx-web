@@ -21,7 +21,6 @@ function WorkInProgress() {
     //     }
     // }
 
-
     return (
         <div className="bg-white w-screen text-black text-left text-lg p-6 lg:p-24">
             <div className="flex flex-row">
@@ -83,7 +82,7 @@ function WorkInProgress() {
                     <a target="_blank" rel="noreferrer" href="https://docs.google.com/forms/d/e/1FAIpQLSebaipUtHF6Sd8c2xjtKDfufKkb-wKqrKj1LEm6nWq6DsC8tw/viewform?usp=sf_link"
                         className="flex self-start justify-center py-2 px-4 border border-transparent shadow-sm text-base lg:text-xl font-medium rounded-md 
                         text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
-                        Tenez-moi au courant !
+                        Tenez-moi au courant ! 
                     </a>
 
                     <div className="text-sm flex flex-col lg:flex-row lg:pt-6 lg:space-x-3">

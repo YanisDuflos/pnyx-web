@@ -35,7 +35,7 @@ function Footer() {
                     <ul className='space-y-1'>
                         <li><Link to="/comment-voter-elections-legislatives-2022" className='hover:text-indigo-500'>Comment voter aux élections législatives 2022 ?</Link></li>
                         <li><Link to="/comment-changer-bureau-vote-2022" className='hover:text-indigo-500'>Comment changer de bureau de vote en 2022 ?</Link></li>
-                        <li><Link to="/comment-savoir-si-vote-2022" className='hover:text-indigo-500'>Comment savoir si on a le droit de voter en 2022 ?</Link></li>                    
+                        <li><Link to="/comment-savoir-si-droit-vote-2022" className='hover:text-indigo-500'>Comment savoir si on a le droit de voter en 2022 ?</Link></li>                    
                     </ul>
                 </div>
                 <div className='flex flex-col space-y-2'>

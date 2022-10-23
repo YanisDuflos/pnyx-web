@@ -6,9 +6,9 @@ import { Outlet } from 'react-router-dom';
 import { ToastContainer } from 'react-toast'
 // import CookieConsent from 'react-cookie-consent'
 import ReactGA from 'react-ga';
+
 const TRACKING_ID = "G-HM4X56CG02";
 ReactGA.initialize(TRACKING_ID);
-
 
 function App() {
   return (
