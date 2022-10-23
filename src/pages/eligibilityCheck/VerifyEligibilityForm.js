@@ -1,61 +1,62 @@
-import React, { useState } from 'react';
+import React from 'react';
+// import React, { useState } from 'react';
 import PrimaryButton from '../../buttons/PrimaryButton';
 import { useNavigate } from "react-router-dom"
-import moment from 'moment';
+// import moment from 'moment';
 
-function getAgeInYears(birthDate) {
-  console.log("birthDate:", birthDate);
-  let birthday = moment(birthDate)
-  console.log("birthday:", birthday);
-  let today = moment()
-  console.log("birthday:", today);
-  let diff = today.diff(birthday, 'years', true)
-  console.log("diff:", diff)
-  return diff
-}
+// function getAgeInYears(birthDate) {
+//   console.log("birthDate:", birthDate);
+//   let birthday = moment(birthDate)
+//   console.log("birthday:", birthday);
+//   let today = moment()
+//   console.log("birthday:", today);
+//   let diff = today.diff(birthday, 'years', true)
+//   console.log("diff:", diff)
+//   return diff
+// }
 
 function VerifyEligibilityForm() {
 
   const navigate = useNavigate();
-  const [isNational, setNationality] = useState({ isNational: false })
-  const [hasRights, setRights] = useState({ hasRights: false })
-  const [birthDate, setBirthDate] = useState({ setBirthDate: null })
+  // const [isNational, setNationality] = useState({ isNational: false })
+  // const [hasRights, setRights] = useState({ hasRights: false })
+  // const [birthDate, setBirthDate] = useState({ setBirthDate: null })
 
-  function handleSubmit(event) {
-    event.preventDefault()
+  // function handleSubmit(event) {
+  //   event.preventDefault()
 
-    console.log("verifying")
-    const reasonsForIneligibility = {
-      notANational: false,
-      noElectoralRights: false,
-      notOfAge: false
-    }
+  //   console.log("verifying")
+  //   const reasonsForIneligibility = {
+  //     notANational: false,
+  //     noElectoralRights: false,
+  //     notOfAge: false
+  //   }
 
-    if (isNational === false) {
-      console.log("nope il faut la nationalité française. enfin ça passe pour municipales et européennes si ressortissant européen")
-      reasonsForIneligibility.notANational = true
-      navigate("fail")
-    }
-    if (hasRights === false) {
-      console.log("nope va falloir retrouver ses droits")
-      reasonsForIneligibility.noElectoralRights = true
-    }
-    if (getAgeInYears(birthDate) < 18) {
-      console.log("nope va falloir grandir")
-      reasonsForIneligibility.notOfAge = true
-    }
+  //   if (isNational === false) {
+  //     console.log("nope il faut la nationalité française. enfin ça passe pour municipales et européennes si ressortissant européen")
+  //     reasonsForIneligibility.notANational = true
+  //     navigate("fail")
+  //   }
+  //   if (hasRights === false) {
+  //     console.log("nope va falloir retrouver ses droits")
+  //     reasonsForIneligibility.noElectoralRights = true
+  //   }
+  //   if (getAgeInYears(birthDate) < 18) {
+  //     console.log("nope va falloir grandir")
+  //     reasonsForIneligibility.notOfAge = true
+  //   }
 
 
-    console.log(reasonsForIneligibility)
+  //   console.log(reasonsForIneligibility)
 
-    if (reasonsForIneligibility.noElectoralRights ||
-      reasonsForIneligibility.notANational ||
-      reasonsForIneligibility.notOfAge) {
-      navigate("fail", { state: { reasonsForIneligibility } })
-    } else {
-      navigate("success", { replace: true })
-    }
-  }
+  //   if (reasonsForIneligibility.noElectoralRights ||
+  //     reasonsForIneligibility.notANational ||
+  //     reasonsForIneligibility.notOfAge) {
+  //     navigate("fail", { state: { reasonsForIneligibility } })
+  //   } else {
+  //     navigate("success", { replace: true })
+  //   }
+  // }
 
   return (
     <div className="p-6">

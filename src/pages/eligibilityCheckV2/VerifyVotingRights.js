@@ -1,4 +1,4 @@
-import { useState } from "react";
+// import { useState } from "react";
 import { Link } from "react-router-dom";
 import CardButton from "../../buttons/CardButton";
 
@@ -23,7 +23,7 @@ function LongCardButton() {
 }
 
 function VerifyVotingRights({ userData }) {
-    const [votingRights, setVotingRights] = useState({ hasVotingRights: true })
+    // const [votingRights, setVotingRights] = useState({ hasVotingRights: true })
 
     return (
         <div className='bg-white text-center text-black'>

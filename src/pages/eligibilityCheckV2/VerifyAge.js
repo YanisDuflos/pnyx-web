@@ -6,8 +6,8 @@ function VerifyAge() {
             <div className='flex-col p-8 space-y-8 justify-center'>
                 <h1 className='text-2xl font-bold'>Êtes-vous majeur ?</h1>
                 <div className='flex space-x-4 justify-center'>
-                    <CardButton icon="🐣" label="Non" style="secondary" />
-                    <CardButton icon="🐓" label="Oui" style="primary" />
+                    <CardButton icon="🐣" label="Non" customStyle="secondary" />
+                    <CardButton icon="🐓" label="Oui" customStyle="primary" />
                 </div>
             </div>
             <div className='flex-col space-y-2'>

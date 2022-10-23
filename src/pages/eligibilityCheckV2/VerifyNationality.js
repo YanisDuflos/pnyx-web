@@ -6,8 +6,8 @@ function VerifyNationality() {
             <div className='flex-col p-8 space-y-8 justify-center'>
                 <h1 className='text-2xl font-bold'>Avez-vous la nationalité française ?</h1>
                 <div className='flex space-x-4 justify-center'>
-                    <CardButton icon="🌍" label="Non" style="secondary" href="/v2/verifyVotingRights" />
-                    <CardButton icon="🇫🇷" label="Oui" style="primary" href="/v2/verifyVotingRights"/>
+                    <CardButton icon="🌍" label="Non" customStyle="secondary" href="/v2/verifyVotingRights" />
+                    <CardButton icon="🇫🇷" label="Oui" customStyle="primary" href="/v2/verifyVotingRights"/>
                 </div>
             </div>
             <div className='flex-col space-y-2'>

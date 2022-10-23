@@ -5,7 +5,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 // import VerifyRegistration from './pages/VerifyRegistration';
-import VerifyEligibility from './pages/VerifyEligibility';
+// import VerifyEligibility from './pages/VerifyEligibility';
 // import PrepareRegistration from './pages/PrepareRegistration';
 import Manifesto from './pages/Manifesto';
 import LandingBadlyRegisteredYouth from './pages/landings/LandingBadlyRegisteredYouth';

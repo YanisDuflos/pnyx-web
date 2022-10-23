@@ -4,22 +4,22 @@ import { toast } from 'react-toast'
 import { Link } from "react-router-dom";
 
 function WorkInProgress() {
-    const [email, setEmail] = useState('')
-    const [willContribute, setWillContribute] = useState(false)
+    // const [email, setEmail] = useState('')
+    // const [willContribute, setWillContribute] = useState(false)
 
-    const subscribe = async (e) => {
-        e.preventDefault()
-        // const response = await axios.post('http://localhost:3001/subscribe', { email: email })
-        const response = await axios.post(process.env.REACT_APP_FIREBASE_FIRESTORE_URL + 'subscribe', { email: email })
+    // const subscribe = async (e) => {
+    //     e.preventDefault()
+    //     // const response = await axios.post('http://localhost:3001/subscribe', { email: email })
+    //     const response = await axios.post(process.env.REACT_APP_FIREBASE_FIRESTORE_URL + 'subscribe', { email: email })
 
-        if (response && response.status === 200) {
-            toast.success('On a bien reçu votre adresse ! Merci et à très vite.')
-            console.log("success", response)
-        } else {
-            toast.error('Malheureusement nous n\'avons pas réussi à sauvegarder votre adresse. \n Réessayez pour voir ?')
-            console.log("error")
-        }
-    }
+    //     if (response && response.status === 200) {
+    //         toast.success('On a bien reçu votre adresse ! Merci et à très vite.')
+    //         console.log("success", response)
+    //     } else {
+    //         toast.error('Malheureusement nous n\'avons pas réussi à sauvegarder votre adresse. \n Réessayez pour voir ?')
+    //         console.log("error")
+    //     }
+    // }
 
 
     return (
@@ -80,7 +80,7 @@ function WorkInProgress() {
                             </button>
                         </div>
                     </form> */}
-                    <a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSebaipUtHF6Sd8c2xjtKDfufKkb-wKqrKj1LEm6nWq6DsC8tw/viewform?usp=sf_link"
+                    <a target="_blank" rel="noreferrer" href="https://docs.google.com/forms/d/e/1FAIpQLSebaipUtHF6Sd8c2xjtKDfufKkb-wKqrKj1LEm6nWq6DsC8tw/viewform?usp=sf_link"
                         className="flex self-start justify-center py-2 px-4 border border-transparent shadow-sm text-base lg:text-xl font-medium rounded-md 
                         text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
                         Tenez-moi au courant !

@@ -1,7 +1,7 @@
 
 import './App.css';
-import NavigationBar from './pages/NavigationBar';
-import Footer from './pages/Footer';
+// import NavigationBar from './pages/NavigationBar';
+// import Footer from './pages/Footer';
 import { Outlet } from 'react-router-dom';
 import { ToastContainer } from 'react-toast'
 // import CookieConsent from 'react-cookie-consent'
