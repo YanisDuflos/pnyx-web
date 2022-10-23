@@ -34,25 +34,27 @@ function Footer() {
                     <h2 className='font-bold text-2xl'>Fiches explicatives</h2>
                     <ul className='space-y-1'>
                         <li><Link to="/comment-voter-elections-legislatives-2022" className='hover:text-indigo-500'>Comment voter aux élections législatives 2022 ?</Link></li>
-                        <li><Link to="/verifier-eligibilite-inscription" className='hover:text-indigo-500'>Comment changer de bureau de vote en 2022 ?</Link></li>
-                        <li><Link to="/verifier-eligibilite-inscription" className='hover:text-indigo-500'>Comment savoir si on a le droit de voter en 2022 ?</Link></li>
+                        <li><Link to="/comment-changer-bureau-vote-2022" className='hover:text-indigo-500'>Comment changer de bureau de vote en 2022 ?</Link></li>
+                        <li><Link to="/comment-savoir-si-vote-2022" className='hover:text-indigo-500'>Comment savoir si on a le droit de voter en 2022 ?</Link></li>                    
                     </ul>
                 </div>
                 <div className='flex flex-col space-y-2'>
                     <h2 className='font-bold text-2xl'>Plus d'outils</h2>
                     <ul className='space-y-1'>
-                        <li><Link to="/verifier-eligibilite-inscription" className='hover:text-indigo-500'>Trouver mon bureau de vote</Link></li>
-                        <li><Link to="/verifier-eligibilite-inscription" className='hover:text-indigo-500'>Vérifier mon éligibilité électorale</Link></li>
-                        <li><Link to="/verifier-eligibilite-inscription" className='hover:text-indigo-500'>Évaluer les programmmes</Link></li>
-                        <li><Link to="/verifier-eligibilite-inscription" className='hover:text-indigo-500'>Émettre des propositions</Link></li>
+                        <li><Link to="/trouver-bureau-vote" className='hover:text-indigo-500'>Trouver mon bureau de vote</Link></li>
+                        <li><Link to="/verifier-eligibilite-inscription" className='hover:text-indigo-500'>Vérifier mon éligibilité à voter</Link></li>
+                        <li><Link to="/verifier-inscription-listes" className='hover:text-indigo-500'>Vérifier mon statut électoral</Link></li>
+                        <li><Link to="/evaluer-programmes" className='hover:text-indigo-500'>Évaluer les programmmes</Link></li>
+                        <li><Link to="/emettre-propositions" className='hover:text-indigo-500'>Émettre des propositions</Link></li>
+                        <li><Link to="/constituer-dossier-inscription" className='hover:text-indigo-500'>M'inscrire aux listes électorales de ma commune</Link></li>
                     </ul>
                 </div>
                 <div className='flex flex-col space-y-2'>
                     <h2 className='font-bold text-2xl'>À propos</h2>
                     <ul className='space-y-1'>
                         <li><Link to="/manifeste" className='hover:text-indigo-500'>Manifeste</Link></li>
-                        <li><Link to="/verifier-eligibilite-inscription" className='hover:text-indigo-500'>L'équipe</Link></li>
-                        <li><Link to="/verifier-eligibilite-inscription" className='hover:text-indigo-500'>Mentions légales</Link></li>
+                        <li><Link to="/equipe" className='hover:text-indigo-500'>L'équipe</Link></li>
+                        <li><Link to="/mentions-legales" className='hover:text-indigo-500'>Mentions légales</Link></li>
                     </ul>
                 </div>
             </div>

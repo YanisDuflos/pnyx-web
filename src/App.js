@@ -1,7 +1,7 @@
 
 import './App.css';
-// import NavigationBar from './pages/NavigationBar';
-// import Footer from './pages/Footer';
+import NavigationBar from './pages/NavigationBar';
+import Footer from './pages/Footer';
 import { Outlet } from 'react-router-dom';
 import { ToastContainer } from 'react-toast'
 // import CookieConsent from 'react-cookie-consent'
@@ -15,8 +15,7 @@ function App() {
     <div className="App font-body h-screen">
       <header className="App-header">
         {process.env.NODE_ENV === "development" ? <small className='w-full bg-slate-700 text-white'>You are running this application in <b>{process.env.NODE_ENV}</b> mode.</small> : <></>}
-        {/* <NavigationBar /> */}
-        {/* <Footer /> */}
+        <NavigationBar />
         <ToastContainer delay="6000" position="bottom-right" />
         <Outlet />
         {/* <CookieConsent 
@@ -35,6 +34,8 @@ function App() {
       {/* <div className="App-body">
         <Outlet />
       </div> */}
+              <Footer />
+
     </div>
   );
 }

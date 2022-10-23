@@ -1,29 +1,31 @@
-import axios from 'axios';
-import { useState } from 'react';
-import { toast } from 'react-toast'
+// import axios from 'axios';
+// import { useState } from 'react';
+// import { toast } from 'react-toast'
 
 function Manifesto() {
-    const [email, setEmail] = useState('')
-    const [willContribute, setWillContribute] = useState(false)
+    // const [email, setEmail] = useState('')
+    // const [willContribute, setWillContribute] = useState(false)
 
-    const subscribe = async (e) => {
-        e.preventDefault()
-        // const response = await axios.post('http://localhost:3001/subscribe', { email: email })
-        const response = await axios.post(process.env.REACT_APP_FIREBASE_FIRESTORE_URL + 'subscribe', { email: email })
+    // const subscribe = async (e) => {
+    //     e.preventDefault()
+    //     // const response = await axios.post('http://localhost:3001/subscribe', { email: email })
+    //     const response = await axios.post(process.env.REACT_APP_FIREBASE_FIRESTORE_URL + 'subscribe', { email: email })
 
-        if (response && response.status === 200) {
-            toast.success('On a bien reçu votre adresse ! Merci et à très vite.')
-            console.log("success", response)
-        } else {
-            toast.error('Malheureusement nous n\'avons pas réussi à sauvegarder votre adresse. \n Réessayez pour voir ?')
-            console.log("error")
-        }
-    }
+    //     if (response && response.status === 200) {
+    //         toast.success('On a bien reçu votre adresse ! Merci et à très vite.')
+    //         console.log("success", response)
+    //     } else {
+    //         toast.error('Malheureusement nous n\'avons pas réussi à sauvegarder votre adresse. \n Réessayez pour voir ?')
+    //         console.log("error")
+    //     }
+    // }
 
     return (
         <div className="bg-white text-black text-left text-lg p-6 lg:px-24 lg:py-12">
             <div className='flex flex-col space-y-6'>
                 <div>
+                    <h1 className='font-bold text-4xl py-4'>Manifeste</h1>
+                    <p className='py-2'>Quelques mots pour exposer notre vision et l'objectif du projet.</p>
                     <h2 className='font-bold text-2xl py-4'>C'est quoi <span className="font-extrabold text-indigo-500">pnyx</span> ?</h2>
                     <p className='py-2'>
                         <span className="font-extrabold text-indigo-500">pnyx</span> est un service conçu pour faciliter l'accès au vote des citoyens français.
@@ -61,8 +63,8 @@ function Manifesto() {
                 </div>
             </div>
 
-            <div className='mt-6'>
-                <h2 className='font-bold text-2xl py-4'>Comment contribuer ?</h2>
+            <div className='mt-6 flex flex-col space-y-4'>
+                <h2 className='font-bold text-2xl'>Comment contribuer ?</h2>
                 <p><span className="font-extrabold text-indigo-500">pnyx</span> est un projet porté par de jeunes actifs, et qui nécessite beaucoup de travail. Tout soutien est le bienvenu.</p>
                 <div className="mt-2">Si vous êtes arrivés jusqu'ici, c'est que vous avez votre pierre à apporter. Pour cela, nous vous proposons deux options:
                     <ol className='list-decimal list-inside'>
@@ -70,7 +72,7 @@ function Manifesto() {
                         <li><span className='font-bold'>Contribuer</span>: partagez votre avis et vos idées, ou mettez directement à profit votre temps ou votre argent.</li>
                     </ol>
                 </div>
-                <form className="flex flex-col mt-4" onSubmit={subscribe}>
+                {/* <form className="flex flex-col mt-4" onSubmit={subscribe}>
                     <h3 className='font-bold'>Sautez le pas !</h3>
 
                     <div className='flex flex-row space-x-6'>
@@ -111,9 +113,18 @@ function Manifesto() {
                         >
                             Tenez-moi informé
                         </button>
+
+                        
                     </div>
-                </form>
+                </form> */}
+                <a target="_blank" rel="noreferrer" href="https://docs.google.com/forms/d/e/1FAIpQLSebaipUtHF6Sd8c2xjtKDfufKkb-wKqrKj1LEm6nWq6DsC8tw/viewform?usp=sf_link"
+                    className="flex self-start justify-center py-2 px-4 border border-transparent shadow-sm text-base lg:text-xl font-medium rounded-md 
+                        text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                    Je veux contribuer !
+                </a>
+
             </div>
+            
         </div >
     )
 }
