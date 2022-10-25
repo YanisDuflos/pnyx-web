@@ -1,4 +1,4 @@
-import Logo from '../../Logo.png'
+// import Logo from '../../Logo.png'
 import LandingImage from '../../assets/pnyx-home.png'
 import { Link } from "react-router-dom";
 
