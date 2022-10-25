@@ -1,4 +1,5 @@
 import Logo from '../../Logo.png'
+import LandingImage from '../../assets/pnyx-home.png'
 import { Link } from "react-router-dom";
 
 function Landing() {
@@ -42,7 +43,7 @@ function Landing() {
                 </div>
 
                 <div className="hidden lg:block p-8">
-                    <img className="w-12 lg:w-96" src={Logo} alt="Le logo pnyx." />
+                    <img className="w-12 lg:w-96" src={LandingImage} alt="L'application pnyx." />
                 </div>
             </div>
 
